@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Parallel Task Scheduling System\n");
+    printf("---------------------------------\n");
+
+    printf("Enter the number of tasks: ");
+    scanf("%d", &n);
+
+    printf("\nRecurrence Relation: T(n) = 7T(n/2) + n\n");
+
+    printf("\nMaster Theorem Parameters:\n");
+    printf("a = 7\n");
+    printf("b = 2\n");
+    printf("f(n) = n\n");
+
+    printf("\nSince n < n^(log2 7),\n");
+    printf("The recurrence satisfies Case 1 of the Master Theorem.\n");
+
+    printf("\nTime Complexity = Theta(n^(log2 7))\n");
+    printf("Approximately = Theta(n^2.807)\n");
+
+    return 0;
+}

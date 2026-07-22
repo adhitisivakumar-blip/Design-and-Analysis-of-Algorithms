@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int n;
+
+    printf("Online Video Streaming Platform\n");
+    printf("Enter number of users (n): ");
+    scanf("%d", &n);
+
+    printf("\nRecurrence Relation:\n");
+    printf("T(n) = 2T(n/2) + n\n");
+
+    printf("\nMaster Theorem Parameters:\n");
+    printf("a = 2\n");
+    printf("b = 2\n");
+    printf("f(n) = n\n");
+
+    printf("\nSince n^(log2 2) = n,\n");
+    printf("Case 2 of Master Theorem applies.\n");
+
+    printf("\nTime Complexity = Theta(n log n)\n");
+    printf("Big-O = O(n log n)\n");
+    printf("Scalability: Efficient for large user data.\n");
+
+    return 0;
+}
